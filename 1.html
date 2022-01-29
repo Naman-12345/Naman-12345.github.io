@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        #navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+        }
+
+        .content {
+            padding: 16px;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .sticky+.content {
+            padding-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+                <div class="nav-title">
+                    <a href="#Home" class="active" onclick="onClick(`Home-nav`)" id="Home-nav">Naman Singla</a>
+                </div>
+            </div>
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
+            <div class="nav-links">
+                <a href="#Home" class="active" onclick="onClick(`Home-nav`)" id="Home-nav">Home</a>
+                <a href="#Skills" onclick="onClick(`Skills-nav`)" id="Skills-nav">Skills</a>
+                <a href="#Hobbies" onclick="onClick(`Hobbies-nav`)" id="Hobbies-nav">Hobbies</a>
+                <a href="contact.html" target="_blank">Contact me</a>
+            </div>
+        </div>
+    </div>
+    <div class="home" id="Home">
+        <div class="headings" data-aos="fade-right" data-aos-duration="2000">
+            <div class="head-1">Hi,</div>
+            <div class="head-1">I'am <span class="head-3">Naman Singla</span></div>
+            <div class="head-1">Web Developer</div>
+            <p class="lorem-text">
+                I'm pursuing Btech in CSAI(Computer Science and Artificial Intelligence) from NSUT,currently focusing on
+                improving my web development skills and learning competitive programming
+            </p>
+            <div class="btn-wrap">
+
+                <div class="btn1"><a href="#Skills" onclick="onClick(`Skills-nav`)" id="Skills-nav">Skills</a></div>
+                <div class="btn2"><a href="#Hobbies" onclick="onClick(`Hobbies-nav`)" id="Hobbies-nav">Hobbies</a></div>
+            </div>
+        </div>
+        <img src="/IMAGES/Naman.jpg" class="home-image" data-aos="fade-up" data-aos-duration="2000">
+    </div>
+    <div class="hobbies" id="Hobbies">
+        <div class="head-hobbies">My Hobbies</div>
+        <div class="hobbies-headlines">
+
+        </div>
+        <div class="icons">
+            <div class="icon">
+                <img src="/images/Code.png" class="code" data-aos="fade-up" data-aos-duration="2000">
+                <div class="icontext" data-aos="fade-right" data-aos-duration="2000">Code</div>
+            </div>
+            <div class="icon">
+                <img src="/images/Cricket.png" class="cricket" data-aos="fade-up" data-aos-duration="2000">
+                <div class="icontext" data-aos="fade-right" data-aos-duration="2000">Cricket</div>
+            </div>
+
+            <div class="icon">
+                <img src="/images/Music.png" class="music" data-aos="fade-up" data-aos-duration="2000">
+                <div class="icontext" data-aos="fade-right" data-aos-duration="2000">Music</div>
+            </div>
+            <div class="icon">
+                <img src="/images/Travel.png" class="travel" data-aos="fade-up" data-aos-duration="2000">
+                <div class="icontext" data-aos="fade-right" data-aos-duration="2000">Travel</div>
+            </div>
+        </div>
+    </div>
+    <div class="skills" id="Skills">
+        <div class="head-hobbies">Skills</div>
+        <div class="hobbies-headlines">
+
+        </div>
+        <div class="skills-inner">
+
+            <div class="skills-wrap">
+                <img src="/images/SKILLS.PNG" class="skills-image home-image" data-aos="fade-up"
+                    data-aos-duration="2000">
+            </div>
+            <div class="ratings" data-aos="fade-left" data-aos-duration="2000">
+                <div class="rating">
+                    <img src="/images/Html.png" class="skills-icon">
+                    <div class="section-1">
+                        <div class="section-2a"></div>
+                    </div>
+                </div>
+                <div class="rating">
+                    <img src="/images/CSS.png" class="skills-icon-css">
+                    <div class="section-1">
+                        <div class="section-2b"></div>
+                    </div>
+                </div>
+                <div class="rating">
+                    <img src="/images/Javascript.png" class="skills-icon">
+                    <div class="section-1">
+                        <div class="section-2c"></div>
+                    </div>
+                </div>
+                <div class="rating">
+                    <img src="/images/php.PNG" class="skills-icon">
+                    <div class="section-1">
+                        <div class="section-2d"></div>
+                    </div>
+                </div>
+                <div class="rating">
+                    <img src="/images/Bootstrap.PNG" class="skills-icon">
+                    <div class="section-1">
+                        <div class="section-2e"></div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                window.onscroll = function () { myFunction() };
+
+                var navbar = document.getElementById("navbar");
+
+                var sticky = navbar.offsetTop;
+
+                function myFunction() {
+                    if (window.pageYOffset >= sticky) {
+                        navbar.classList.add("sticky")
+                    } else {
+                        navbar.classList.remove("sticky");
+                    }
+                }
+            </script>
+            <script src="1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,381 @@
+* {
+    box-sizing: border-box;
+    
+  }
+  :root{
+      --primary-color:rgb(0, 255, 200);
+      --secondary-color:black;
+  }
+  body {
+      background-color: rgb(250, 244, 249);
+    margin: 0px;
+    font-family: 'segoe ui';
+  }
+
+  a{
+      text-decoration: none;
+      color: black;
+  }
+  
+  .nav {
+    height: 50px;
+    width: 100%;
+    background-color: var(--primary-color);
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 29px;
+    color: #fff;
+    padding: 10px 10px 10 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  .head-1{
+      font-size: 40px;
+      font-weight: bold;
+  }
+  .head-3{
+      color: var(--primary-color);
+  }
+  .lorem-text{
+      width: 400px;
+      color: gray;
+  }
+  .home-image{
+      width: 200px;
+  
+  
+  }
+  .home{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap-reverse;
+  }
+  .btn-wrap{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    
+      
+  }
+  .btn1:hover{
+      background-color: white;
+      border: 2px solid var(--primary-color);
+      color: black;
+  }
+  .headings{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-top: 100px;
+  }
+  .home{
+      padding: 20px;
+  }
+  .head-hobbies{
+      font-size: 30px;
+      color: var(--primary-color);
+      font-weight: bolder;
+      text-align: center;
+      margin-top: 100px;
+  }
+  .hobbies-headlines{
+      font-size: 15px;
+      margin-top: 10px;
+      color: gray;
+      font-weight: bolder;
+      text-align: center;
+  }
+  .btn1{
+      background-color: var(--primary-color);
+      width: 120px;
+      text-align: center;
+      padding: 10px;
+    
+      border-radius: 10px;
+      color: white;
+      margin-right: 20px;
+  }
+  .code,.music,.basketball,.travel,.cricket{
+      width: 80px;
+      height: 80px;
+  }
+  
+  .icons{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  }
+  .icontext{
+      font-size: 20px;
+      font-weight: bolder;
+      
+  }
+  
+  .icon{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .btn2{
+      width: 120px;
+      text-align: center;
+      padding: 10px;
+      border-radius: 10px;
+      color: var(--secondary-color);
+      border: 2px solid black;
+      
+  }
+  .icon{
+      margin: 40px;
+  }
+  .icons{
+      flex-wrap: wrap;
+  }
+  
+  .section-1{
+      border: 2px solid black;
+      width: 400px;
+      height: 10px;
+  }
+  .skills-inner{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: center;
+  }
+  .skills-icon{
+      width: 30px;
+      height: 30px;
+  }
+  .skills-icon-css{
+      width: 20px;
+      height: 20px;
+  }
+  
+  .rating{
+      margin-top: 20px;
+  }
+  .footer{
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    margin-top: 94px;
+    width: 100vw;
+    justify-content: space-around;
+    color: white;
+    flex-wrap: wrap;
+    font-size: 20px;
+    padding: 20px;
+  }
+  .section-2a{
+      background-color: black;
+      width: 350px;
+      height: 8px;
+  }
+  .section-2b{
+      background-color: black;
+      width: 300px;
+      height: 8px;
+  }
+  .section-2c{
+      background-color: black;
+      width: 250px;
+      height: 8px;
+  }
+  .section-2d{
+      background-color: black;
+      width: 150px;
+      height: 8px;
+  }
+  .section-2e{
+    background-color: black;
+    width: 350px;
+    height: 8px;
+}
+  
+  @media (min-width:720px) {
+  .cricket,.music{
+      margin-top: 150px;
+      
+  }
+  .icontext{
+      color: var(--primary-color);
+      padding-top: 15px;
+  }
+  .icons{
+      margin-top: -50px;
+     
+  }
+  }
+  @media screen and (max-width:460px) {
+      .head-1{
+          font-size: 20px;
+      }
+      .head-hobbies{
+          font-size: 20px;
+      }
+      .hobbies-headlines{
+          font-size: 10px;
+      }
+      .lorem-text
+      {
+          font-size: 15px;
+      }
+      .headings{
+          margin-left: 40px;
+      }
+      .section-1{
+          width: 200px;
+      }
+      .section-2a{
+          width: 100px;
+      }
+      .section-2b{
+          width: 160px;
+      }
+      .section-2c{
+          width: 180px;
+      }
+      .section-2d{
+          width: 120px;
+      }
+      .home-image{
+          width: 250px;
+      }
+      .lorem-text{
+      width: 280px;
+      color: gray;
+  }
+      
+  }
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: va;
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+  html{
+      scroll-behavior: smooth;
+  }
+  .active{
+      border-bottom: 4px solid black;
+  }
+  .nav-title{
+      font-family: 'Charm', cursive;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  
+  }
+  h1{
+      background-color: var(--primary-color);
+      margin-top: 20px;
+      margin-left: -34px; 
+      font-family: 'Roboto', sans-serif;
+      padding: 40px;
+      width: 100vw;
+  }
+  .contactform{
+      padding: 0 34px;
+  }
+
+  .contactform form div{
+      padding: 10px 0;
+  }
+  
+  #emailHelp{
+      font-size: 11px;
+      color: rgb(117, 112, 112);
+      margin: 0 5px;
+  }
+  .contactform form div input{
+      width: 16vw;
+      border-radius: 5px;
+      margin: 6px 0;
+      padding: 3px;
+  }
+#form-check{
+   flex-direction: row;
+}
+#form-check input{
+    width: 24px;
+}
+h2{
+    margin-top: -5px;
+    margin-bottom: 4px;
+}
